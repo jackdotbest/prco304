@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="App2.userAccessControlPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,0" Width="500">
+            <TextBlock FontSize="40" Text="User Access Control" HorizontalAlignment="Left" Margin="0,0,0,20"/>
+            <TextBlock Text="It is a requirement that you have identified all locations where sensitive and businesses critical information is stored digitally. (email, web and application servers, data shares, end user devices etc)." FontSize="18" Width="500" TextWrapping="Wrap"/>
+            <CheckBox Content="Has this been done?" Margin="20" x:Name="answerFivePointOne"/>
+            <TextBlock FontSize="18" Width="500" TextWrapping="Wrap">Does the organisation have a user
+account creation and approval process?</TextBlock>
+            <CheckBox Content="Confirm" Margin="20" x:Name="answerFivePointTwo"/>
+            <TextBlock FontSize="18" Width="500" TextWrapping="Wrap">Does the organisation authenticate users
+before granting access in compliance with
+the defined password policy?            </TextBlock>
+            <CheckBox Content="Confirm" Margin="20" x:Name="answerFivePointThree"/>
+            <TextBlock FontSize="18" Width="500" TextWrapping="Wrap">Has the organisation removed or disabled
+user accounts when no longer required?</TextBlock>
+            <CheckBox Content="Confirm" Margin="20" x:Name="answerFivePointFour"/>
+            <TextBlock FontSize="18" Width="500" TextWrapping="Wrap">Where available, has the organisation
+implemented two factor authentication?</TextBlock>
+            <TextBox x:Name="answerFivePointFive" Width="450" Height="150" Margin="20"/>
+            <TextBlock FontSize="18" Width="500" TextWrapping="Wrap">Are administrative accounts used to
+perform administrative activities ONLY?
+(no emailing, web browsing or other
+standard user activities that may expose
+administrative privileges to avoidable
+risks)</TextBlock>
+            <CheckBox Content="Confirm" Margin="20" x:Name="answerFivePointSix"/>
+            <TextBlock FontSize="18" Width="500" TextWrapping="Wrap">Does the organisation remove or disable
+special access privileges when no longer
+required?            </TextBlock>
+            <CheckBox Content="Confirm" Margin="20" x:Name="answerFivePointSeven"/>
+            <Button Width="250" FontSize="25" Content="Submit" x:Name="submitButton" Click="SubmitButton_Click" HorizontalAlignment="Right"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="1020,50,0,0" Width="500">
+            
+        </StackPanel>
+    </Grid>
+</Page>

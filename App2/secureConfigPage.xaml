@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="App2.secureConfigPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="600,50,0,0">
+            <StackPanel>
+                <TextBlock Text="Secure Configuration" FontSize="40" HorizontalAlignment="Left" Margin="0,20,0,0"/>
+                <TextBlock Text="Do you have a 'documented' password policy that contains the requirements of section 2?" FontSize="18" Width="500" TextWrapping="Wrap"/>
+                <CheckBox x:Name="answerFourPointOne" Content="Confirm" Margin="20"/>
+                <TextBlock Text="All unnecessary user accounts (eg guest accounts and unnecessary administrative accounts) must be removed or disabled on all devices." FontSize="18" Width="500" TextWrapping="Wrap"/>
+                <CheckBox x:Name="answerFourPointTwo" Content="Is this the case?" Margin="20"/>
+                <TextBlock Text="All default or guessable passwords for user accounts on all devices must be changed to an alternative password in line with your password policy." FontSize="18" Width="500" TextWrapping="Wrap"/>
+                <CheckBox x:Name="answerFourPointThree" Content="Is this the case?" Margin="20"/>
+                <TextBlock Text="Unnecessary software (including applications, system utilities and network services) must be removed or disabled." FontSize="18" Width="500" TextWrapping="Wrap"/>
+                <CheckBox x:Name="answerFourPointFour" Content="Is this the case?" Margin="20"/>
+                <TextBlock Text="In order to prevent untrusted programs running automatically, (including those from the internet) either the auto-run feature must be disabled or user authorisation must be actioned before file execution. Describe how this has been achieved." FontSize="18" Width="500" TextWrapping="Wrap"/>
+                <TextBox x:Name="answerFourPointFive" Width="450" Margin="20" TextWrapping="Wrap" Height="150"/>
+                <TextBlock Text="How is internet-based access controlled to any areas containing commercially, personally sensitive data or any data which is critical to the running of the organisation?" FontSize="18" Width="500" TextWrapping="Wrap"/>
+                <TextBox x:Name="answerFourPointSix" Width="450" Margin="20" TextWrapping="Wrap" Height="150"/>
+                <Button x:Name="submitButton" Click="SubmitButton_Click" Width="250" Content="Submit" HorizontalAlignment="Right" FontSize="25"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Page>

@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="App2.patchManagementPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,0" Width="500">
+            <TextBlock Text="Patch Managment" FontSize="40"/>
+            <TextBlock Text="Is all software licensed and supported?" Width="500" TextWrapping="Wrap" FontSize="18"/>
+            <CheckBox x:Name="answerSevenPointOne" Content="Confirm" Margin="20"/>
+            <TextBlock Text="Is all software removed from devices in scope when no longer supported?" Width="500" TextWrapping="Wrap" FontSize="18"/>
+            <CheckBox x:Name="answerSevenPointTwo" Content="Confirm" Margin="20"/>
+            <TextBlock Text="Is software patched within 14 days of an update being released, where the patch fixes a vulnerability with a severity that the product vendor describes as 'critical' or 'high risk'" Width="500" TextWrapping="Wrap" FontSize="18"/>
+            <CheckBox x:Name="answerSevenPointThree" Content="Confirm" Margin="20"/>
+            <Button x:Name="submitButton" Content="Submit" Click="SubmitButton_Click" Width="250" HorizontalAlignment="Right" FontSize="25"/>
+        </StackPanel>
+    </Grid>
+</Page>

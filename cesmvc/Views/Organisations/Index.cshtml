@@ -1,0 +1,75 @@
+﻿@model IEnumerable<cesmvc.Models.Organisation>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SECTOR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMPLOYEES)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WEBADDRESS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.INCLUDEREGISTER)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.INCLUDEMARKETING)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Person.FORENAME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Person1.FORENAME)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SECTOR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMPLOYEES)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WEBADDRESS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.INCLUDEREGISTER)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.INCLUDEMARKETING)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Person.FORENAME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Person1.FORENAME)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,67 @@
+﻿<Page
+    x:Class="App2.pbapage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,0,0,0">
+            
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,20">
+            <StackPanel>
+                <TextBlock Text="Section 2:" FontSize="40" HorizontalAlignment="Left" Margin="0,0,0,20"/>
+                <TextBlock Text="If applicable describe the technical controls used to enforce the password policy:" FontSize="18" Width="500" TextWrapping="Wrap"/>
+                <TextBox x:Name="answerTwoPointOne" Width="400" Height="100" Margin="10" TextWrapping="Wrap"/>
+                <TextBlock Text="If applicable describe paper based controls used to enforce the password policy:" FontSize="18" Width="500" TextWrapping="Wrap"/>
+                <TextBox x:Name="answerTwoPointTwo" Width="400" Height="100" Margin="10" TextWrapping="Wrap" CanDrag="True"/>
+                <TextBlock Text="Confirm that you have implemented a password policy which meets the requirements of the Password-based authentication requirements (hover to show):" FontSize="18" Width="500" TextWrapping="Wrap" x:Name="sectionThreePointThreeQuestion" PointerEntered="ShowHint" PointerExited="HideHint"/>
+                <TextBlock x:Name="radiobuttonText" Text="Please select one response below:" Visibility="Collapsed" FontSize="30" TextWrapping="Wrap" Width="400"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <StackPanel HorizontalAlignment="Center">
+                    <RadioButton Content="Yes" FontSize="30" x:Name="yesButton" GroupName="firstGroup"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left">
+                    <RadioButton Content="No" FontSize="30" x:Name="noButton" GroupName="firstGroup"/>
+                </StackPanel>
+            </StackPanel>
+            <Button x:Name="section2SubmitButton" Click="Section2SubmitButton_Click" Content="Submit" FontSize="40" HorizontalAlignment="Right" Margin="10" Width="200"/>
+        </StackPanel>
+            <StackPanel x:Name="hintPanel" Margin="0,50,0,20" Visibility="Collapsed">
+                <TextBlock Width="700" FontSize="16" TextWrapping="Wrap" xml:space="preserve">
+For password-based authentication in Internet-facing services the Applicant must:
+    ➢ protect against brute-force password guessing, by using at least one of the following 
+        methods:
+    ➢ lock accounts after no more than 10 unsuccessful attempts
+    ➢ limit the number of guesses allowed in a specified time period to no more than 10 guesses 
+        within 5 minutes 
+For password-based authentication in Internet-facing and non-internet facing services the Applicant must:
+    ➢ set a minimum password length of at least 8 characters
+    ➢ not set a maximum password length
+    ➢ change passwords promptly when the Applicant knows or suspects they have been 
+        compromised
+    ➢ authenticate users before granting access to applications and devices, using unique 
+        credentials
+    ➢ have a password policy that tells users:
+        ➢ how to avoid choosing obvious passwords (such as those based on easilydiscoverable 
+            information like the name of a favourite pet)
+        ➢ not to choose common passwords — this could be implemented by technical means, using 
+            a password blacklist
+        ➢ not to use the same password anywhere else, at work or at home
+        ➢ where and how they may record passwords to store and retrieve them securely
+            — for example, in a sealed envelope in a secure cupboard
+        ➢ if they may use password management software — if so, which software and how
+        ➢ which passwords they really must memorise and not record anywhere
+The Applicant is not required to:
+    ➢ enforce regular password expiry for any account
+    ➢ enforce password complexity requirements
+
+                </TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

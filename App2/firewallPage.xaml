@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="App2.firewallPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Width="500" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,0">
+            <StackPanel>
+                <TextBlock Text="Firewalls" FontSize="40" HorizontalAlignment="Left" Margin="0,0,0,25"/>
+                <TextBlock Text="Describe how your firewalls are placed in your network:" FontSize="18" HorizontalAlignment="Left" Width="500" TextWrapping="Wrap"/>
+                <TextBox x:Name="answerThreePointOne" Width="450" Height="150" TextWrapping="Wrap" Margin="15"/>
+                <TextBlock Text="It is required that all desktops and laptops that may be used on untrusted networks (such as public WiFi networks) must have properly configured host-based firewalls." FontSize="18" HorizontalAlignment="Left" Width="500" TextWrapping="Wrap"/>
+                <CheckBox x:Name="answerThreePointTwo" Content="Is this the case?" Margin="15"/>
+                <TextBlock Text="All default administrative passwords must be changed to an alternative password that is difficult to guess in line with your password policy." FontSize="18" HorizontalAlignment="Left" Width="500" TextWrapping="Wrap"/>
+                <CheckBox x:Name="answerThreePointThree" Content="Is this the case?" Margin="15"/>
+                <TextBlock Text="How is each firewall administrative interface protected from direct access via the internet?" FontSize="18" HorizontalAlignment="Left" Width="500" TextWrapping="Wrap"/>
+                <TextBox x:Name="answerThreePointFour" Width="450" Height="150" TextWrapping="Wrap" Margin="15"/>
+                <TextBlock Text="All unauthenticated inbound connections must be blocked by default." FontSize="18" HorizontalAlignment="Left" Width="500" TextWrapping="Wrap"/>
+                <CheckBox x:Name="answerThreePointFive" Content="Is this the case?" Margin="15"/>
+                <TextBlock Text="If inbound firewall rules are configured, they must be approved and documented." FontSize="18" HorizontalAlignment="Left" Width="500" TextWrapping="Wrap"/>
+                <CheckBox x:Name="answerThreePointSix" Content="Is this the case?" Margin="15"/>
+                <TextBlock Text="Firewall rules no longer required must be removed quickly." FontSize="18" HorizontalAlignment="Left" Width="500" TextWrapping="Wrap"/>
+                <CheckBox x:Name="answerThreePointSeven" Content="Is this the case?" Margin="15"/>
+                <Button x:Name="submitButton" Click="SubmitButton_Click" Width="250" HorizontalAlignment="Right" Content="Submit" FontSize="30"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

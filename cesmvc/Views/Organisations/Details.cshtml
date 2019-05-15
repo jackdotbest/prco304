@@ -1,0 +1,82 @@
+﻿@model cesmvc.Models.Organisation
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Organisation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SECTOR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SECTOR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMPLOYEES)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMPLOYEES)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WEBADDRESS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WEBADDRESS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INCLUDEREGISTER)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INCLUDEREGISTER)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INCLUDEMARKETING)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INCLUDEMARKETING)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Person.FORENAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person.FORENAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Person1.FORENAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person1.FORENAME)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

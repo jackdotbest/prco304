@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="App2.POCDetailsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="Page_Loaded"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" FocusVisualPrimaryBrush="#FF787676" Foreground="#FF727272">
+
+    <Grid FocusVisualPrimaryBrush="#FF787878">
+        <ComboBox x:Name="cbTitle" HorizontalAlignment="Center" Margin="0,290,300,0" VerticalAlignment="Top" Width="250" SelectionChanged="CbTitle_SelectionChanged">
+            <x:String>Mr</x:String>
+            <x:String>Miss</x:String>
+            <x:String>Mrs</x:String>
+            <x:String>Ms</x:String>
+            <x:String>Dr</x:String>
+            <x:String>Sir</x:String>
+            <x:String>Dame</x:String>
+            <x:String>Lord</x:String>
+            <x:String>Lady</x:String>
+        </ComboBox>
+        <TextBox x:Name="fnameBox" HorizontalAlignment="Center" Margin="0,362,300,0" Text="" VerticalAlignment="Top" Width="250" PlaceholderText="Forename"/>
+        <TextBox x:Name="snameBox" HorizontalAlignment="Center" Margin="0,430,300,0" Text="" VerticalAlignment="Top" PlaceholderText="Surname" Width="250"/>
+        <TextBox x:Name="jroleBox" HorizontalAlignment="Center" Margin="0,496,300,0" Text="" VerticalAlignment="Top" PlaceholderText="Job Role" Width="250"/>
+        <TextBox x:Name="emailBox" HorizontalAlignment="Center" Margin="0,554,300,0" Text="" VerticalAlignment="Top" PlaceholderText="Email Address" Width="250"/>
+        <Button x:Name="submitBtn" Content="Submit" HorizontalAlignment="Center" Margin="0,650,0,0" VerticalAlignment="Top" Width="500" Height="50" Click="SubmitBtn_Click" FontSize="20"/>
+        <CheckBox x:Name="sameInvoiceBox" Content="This person is also the correct person to receive the invoice" HorizontalAlignment="Center" Margin="0,586,300,0" VerticalAlignment="Top" Width="250" Checked="SameInvoiceBox_Checked"  Unchecked="SameInvoiceBox_Unchecked"/>
+        <TextBlock x:Name="POCTextBlock" Text="Technical Point Of Contact" HorizontalAlignment="Center" Margin="0,250,300,0" FontSize="20" Height="25" VerticalAlignment="Top"/>
+        <TextBlock x:Name="personIcon" HorizontalAlignment="Center" Margin="0,48,300,0" Text="&#xE77B;" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe MDL2 Assets" FontSize="200" FocusVisualPrimaryBrush="#FF7A7A7A"/>
+
+        <ComboBox x:Name="cbTitle2" HorizontalAlignment="Center" Margin="300,290,0,0" Visibility="Visible" VerticalAlignment="Top" Width="250" SelectionChanged="CbTitle_SelectionChanged">
+            <x:String>Mr</x:String>
+            <x:String>Miss</x:String>
+            <x:String>Mrs</x:String>
+            <x:String>Ms</x:String>
+            <x:String>Dr</x:String>
+            <x:String>Sir</x:String>
+            <x:String>Dame</x:String>
+            <x:String>Lord</x:String>
+            <x:String>Lady</x:String>
+        </ComboBox>
+        <TextBox x:Name="fnameBox2" HorizontalAlignment="Center" Margin="300,362,0,0" Visibility="Visible" Text="" VerticalAlignment="Top" Width="250" PlaceholderText="Forename"/>
+        <TextBox x:Name="snameBox2" HorizontalAlignment="Center" Margin="300,430,0,0" Visibility="Visible" Text="" VerticalAlignment="Top" PlaceholderText="Surname" Width="250"/>
+        <TextBox x:Name="jroleBox2" HorizontalAlignment="Center" Margin="300,496,0,0" Visibility="Visible" Text="" VerticalAlignment="Top" PlaceholderText="Job Role" Width="250"/>
+        <TextBox x:Name="emailBox2" HorizontalAlignment="Center" Margin="300,554,0,0" Visibility="Visible" Text="" VerticalAlignment="Top" PlaceholderText="Email Address" Width="250"/>
+        <TextBlock x:Name="InvoicePOCTextBlock" Text="Invoice Point Of Contact" HorizontalAlignment="Center" Margin="300,250,0,0" FontSize="20" Height="25" VerticalAlignment="Top"/>
+        <TextBlock x:Name="personIcon2" HorizontalAlignment="Center" Margin="300,48,0,0" Visibility="Visible" Text="&#xE77B;" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe MDL2 Assets" FontSize="200" FocusVisualPrimaryBrush="#FF7A7A7A"/>
+    </Grid>
+</Page>

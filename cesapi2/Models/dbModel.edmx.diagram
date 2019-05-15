@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3899aae20a1544a3b0a4e6aec2b7fc6f" Name="Diagram1" ZoomLevel="97">
+        <EntityTypeShape EntityType="CE_DataModel.Location" Width="1.5" PointX="5.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CE_DataModel.Organisation" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CE_DataModel.Person" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CE_DataModel.QuestionnaireResult" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="CE_DataModel.FK__Locations__ORGID__7D439ABD" ManuallyRouted="false" />
+        <AssociationConnector Association="CE_DataModel.FK__Organisat__CONTA__797309D9" ManuallyRouted="false" />
+        <AssociationConnector Association="CE_DataModel.FK__Organisat__INVOI__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="CE_DataModel.FK_QuestionnaireResults_Organisations" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

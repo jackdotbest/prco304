@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="App2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid PointerMoved="Grid_PointerMoved">
+        <NavigationView x:Name="NavigationViewControl" IsPaneOpen="False" Loaded="NavigationViewControl_Loaded" ItemInvoked="NavigationViewControl_ItemInvoked" BackRequested="NavigationViewControl_BackRequested" PointerExited="NavigationViewControl_PointerExited">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Tag="login" Content="Login" Icon="Permissions" x:Name="LoginMenuItem"/>
+                <NavigationViewItem Tag="home" Content="Home" Icon="Home" x:Name="HomeMenuItem"/>
+                <NavigationViewItemSeparator x:Name="firstSeperator"/>
+                <NavigationViewItemHeader Content="Organisation Identification" x:Name="OrgIDHeader" />
+                <NavigationViewItem Tag="pocpage" Content="Point of Contact Details" x:Name="PersonDetailsMenuItem" Icon="People" Visibility="Collapsed"/>
+                <NavigationViewItem Tag="orgdetails" Content="Organisation Details" x:Name="OrganisationDetailsMenuItem" Visibility="Collapsed" Icon="Street"/>
+                <NavigationViewItem Tag="locdetails" Content="Location Details" x:Name="LocationDetailsMenuItem" Visibility="Collapsed" Icon="Map"/>
+                <NavigationViewItemSeparator x:Name="secondSeperator" Visibility="Collapsed"/>
+                <NavigationViewItemHeader Content="Section 1" x:Name="Section1Header" Visibility="Collapsed"/>
+                <NavigationViewItem Tag="scpPage" Content="Business Scope" x:Name="BusinessScopeMenuItem" Visibility="Collapsed" Icon="Document"/>
+                <NavigationViewItemHeader Content="Section 2" x:Name="Section2Header" Visibility="Collapsed"/>
+                <NavigationViewItem Tag="pbaPage" Content="Password-based Authentication" x:Name="PasswordBasedAuthenticationMenuItem" Visibility="Collapsed" Icon="Document"/>
+                <NavigationViewItemHeader Content="Section 3" x:Name="Section3Header" Visibility="Collapsed"/>
+                <NavigationViewItem Tag="frwlPage" Content="Firewalls" x:Name="FirewallsMenuItem" Visibility="Collapsed" Icon="Document"/>
+                <NavigationViewItemHeader Content="Section 4" x:Name="Section4Header" Visibility="Collapsed"/>
+                <NavigationViewItem Tag="scrCnfgPage" Content="Secure Configuration" x:Name="SecureConfigurationMenuItem" Visibility="Collapsed" Icon="Document"/>
+                <NavigationViewItemHeader Content="Section 5" x:Name="Section5Header" Visibility="Collapsed"/>
+                <NavigationViewItem Tag="usrAcsCtrlPage" Content="User Access Control" x:Name="UserAccessControlMenuItem" Visibility="Collapsed" Icon="Document"/>
+                <NavigationViewItemHeader Content="Section 6" x:Name="Section6Header" Visibility="Collapsed"/>
+                <NavigationViewItem Tag="mlwrPrtctnPage" Content="Malware Protection" x:Name="AntiMalwareSoftwareMenuItem" Visibility="Collapsed" Icon="Document"/>
+                <NavigationViewItemHeader Content="Section 7" x:Name="Section7Header" Visibility="Collapsed"/>
+                <NavigationViewItem Tag="ptchMngmntPage" Content="Patch Management" x:Name="PatchManagementMenuItem" Visibility="Collapsed" Icon="Document"/>
+            </NavigationView.MenuItems>
+
+            <ScrollViewer>
+                <Frame x:Name="ContentFrame" Padding="12,0,12,24" IsTabStop="True" NavigationFailed="ContentFrame_NavigationFailed"/>
+            </ScrollViewer>
+
+        </NavigationView>
+
+    </Grid>
+</Page>
