@@ -1,0 +1,255 @@
+﻿@model IEnumerable<cesmvc.Models.QuestionnaireResult>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.C2_1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C2_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C2_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C3_1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C3_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C3_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C3_4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C3_5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C3_6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C3_7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C4_1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C4_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C4_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C4_4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C4_5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C4_6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C5_1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C5_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C5_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C5_4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C5_5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C5_6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C5_7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C6_1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C6_1_1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C6_1_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C6_1_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C6_1_4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C6_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C6_2_1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C6_2_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C6_2_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C6_2_4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C6_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C7_1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C7_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.C7_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Organisation1.NAME)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.C2_1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C2_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C2_3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C3_1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C3_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C3_3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C3_4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C3_5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C3_6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C3_7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C4_1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C4_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C4_3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C4_4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C4_5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C4_6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C5_1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C5_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C5_3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C5_4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C5_5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C5_6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C5_7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C6_1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C6_1_1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C6_1_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C6_1_3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C6_1_4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C6_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C6_2_1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C6_2_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C6_2_3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C6_2_4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C6_3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C7_1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C7_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.C7_3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Organisation1.NAME)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

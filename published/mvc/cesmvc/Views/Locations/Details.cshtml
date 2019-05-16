@@ -1,0 +1,82 @@
+﻿@model cesmvc.Models.Location
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Location</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LINE1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LINE1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LINE2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LINE2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LINE3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LINE3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CITY)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CITY)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.POSTCODE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.POSTCODE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MAINSITE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MAINSITE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Organisation.NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Organisation.NAME)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
